@@ -18,7 +18,6 @@ class FibonacciBackend(Resource):
         for i in range(2, n+2):
             fib.append(fib[i-1]+fib[i-2])
         res = fib[n-1]
-        n = 0
         return res
 
 class FactorialBackend(Resource):
